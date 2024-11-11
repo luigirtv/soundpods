@@ -101,6 +101,9 @@ app.get('/api/apple-pay/verify', async (req, res) => {
       details: error.message 
     });
   }
+app.get('/api/health', (req, res) => {
+  res.status(200).send({ status: 'OK' });
+});
 });
 
 const PORT = process.env.PORT || 3000;
