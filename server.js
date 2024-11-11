@@ -1,5 +1,6 @@
-// Importez Express
-const express = require('express');
+// Importez Express en utilisant ESM
+import express from 'express';
+
 const app = express();
 
 // Ajoutez un middleware pour gérer les requêtes JSON
